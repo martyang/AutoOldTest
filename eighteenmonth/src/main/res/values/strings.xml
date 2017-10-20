@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">模拟用户性能测试</string>
+    <string name="app_name_e">Auto User Nature Test</string>
+    <string name="author_name">彭北林</string>
+    <string name="test_stop">停止测试</string>
+    <string name="test_start">开始测试</string>
+    <string name="next">下一步</string>
+    <string name="last">上一步</string>
+    <string name="finish">结束引导</string>
+    <string name="fixture">
+        ①.请手动安装开发者提供的一个辅助apk\n
+        ②.清理白名单中只能存在此测试apk和在第一步中安装的辅助apk,如果有别的apk存在清理白名单中请移除\n
+        ③.把开发者提供的一个预制资源文件夹复制到内部存储器下(文件夹名称:apkpath)\n
+        ④.安装好需要测试的第三方的APK[爱奇艺,虎牙,酷我听书,网易云音乐,RawApp]\n
+        ⑤.进入酷我听书和网易云音乐需要进入到应用内并点击播放一个列表然后暂停即可[开发者提供]\n
+        ⑥.请点掉所有需要测试的apk的弹框\n
+    </string>
+    <string name="menu_result">结果</string>
+    <string name="result_message">
+        应用启动时间的Log和具体的启动时间的结果路径在：内部存储器/18month/文件夹下
+    </string>
+    <string name="preinstall_guidance">预设条件引导</string>
+    <string name="condition_1">步骤一:\n请手动安装开发者提供的一个辅助apk,安装完成之后启动,然后按Home键回到桌面,完成后点击下一步。</string>
+    <string name="condition_2">步骤四:\n把此测试apk和在第一步中安装的辅助apk加入清理白名单,如果有别的apk存在清理白名单中请移除。</string>
+    <string name="condition_3">步骤二:\n把开发者提供的一个预制资源文件夹复制到内部存储器下(文件夹名称为 apkpath)</string>
+    <string name="condition_4">步骤三:\n安装好需要测试的第三方的APK[爱奇艺 虎牙 酷我听书 网易云音乐 RawApp QQ]并登陆qq和微信</string>
+    <string name="condition_5">步骤五:\n进入酷我听书和网易云音乐需要进入到应用内并点击播放一个列表然后暂停即可(选择音乐和书籍较多的列表)</string>
+    <string name="condition_6">步骤六:\n点击下面的按钮会依次启动以下App,请点掉弹框,每次点掉弹框后请自行点击返回键回到此界面,然后再点击跳转到下一个应用点掉弹框,直到把下面所有应用全部处理</string>
+
+    <string name="condition_6_s">
+        联系人\n
+        短信\n
+        微信\n
+        QQ\n
+        时光相册\n
+        浏览器\n
+        网易云音乐\n
+        虎牙直播\n
+        爱奇艺\n
+        酷我听书\n
+        相机(<font color="#ff0000"><b>关掉闪光灯</b></font>)\n
+    </string>
+
+    <string name="go_system">点击跳转到[系统管家]</string>
+    <string name="go_filemanager">点击跳转[文件管理]</string>
+    <string name="install_apk">点击安装apk</string>
+    <string name="checkinstall_apk">点击检查apk的安装情况</string>
+    <string name="go_music">跳转[网易云音乐]</string>
+    <string name="go_kuwo">跳转[酷我听书]</string>
+    <string name="menu_yindao">重新进入预设引导</string>
+
+    <string name="splash_version">V1.01.01M</string>
+    <string name="splash_des">make smiles fulfil life with joy</string>
+    <string name="onebyone_go">一个一个应用跳转</string>
+
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addDataRoot"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:textColor="#000000">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据填充"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="说明：相机拍照循环一次为拍六张删除两张"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加联系人个数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/contactsNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加短信个数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/MMsNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="短信类型："
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:id="@+id/textView"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/hasRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="已读" />
+
+                    <RadioButton
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/notRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未读" />
+
+
+                    <RadioButton
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/hasSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已发送" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通话记录条数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/callLogNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                >
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="记录类型："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:id="@+id/group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="呼入" />
+
+                    <RadioButton
+                        android:id="@+id/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="呼出" />
+
+                    <RadioButton
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/miss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未接" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电子邮件刷新次数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/eMailNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="后摄像循环拍照次数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/cameraNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前摄像循环拍照次数："
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/cameraFrontNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频循环播放次数："
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                   />
+
+                <EditText
+                    android:id="@+id/videoNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minEms="6" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startAdd"
+        android:layout_alignParentBottom="true"
+        android:textSize="22sp"
+        android:textColor="#000000" />
+</RelativeLayout>

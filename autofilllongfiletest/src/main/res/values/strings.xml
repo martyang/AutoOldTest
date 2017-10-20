@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">填充长名文件</string>
+    <string name="fill_filesize">填充长名文件的数目:</string>
+    <string name="fill_imgsize">填充图片的数目</string>
+    <string name="start_test">开始测试</string>
+    <string name="stop_test">停止测试</string>
+    <string name="input_filesize">900000</string>
+    <string name="input_imgsize">60000</string>
+    <string name="action_clear">清理所有文件</string>
+    <string name="action_explain">说明</string>
+    <string name="auther">彭北林</string>
+    <string name="action_explain_content">
+        长文件的填充路径: \n  内部存储器下/AutoFillFileTest \n图片的填充路径: \n  内部存储器下/AutoFillImgTest
+    </string>
+</resources>

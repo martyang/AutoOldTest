@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:background="?attr/colorPrimary" />
+    <View
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/v_top_card"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        />
+    <ImageView
+        android:src="@mipmap/img01"
+        android:id="@+id/home_item_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/home_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textSize="24sp"
+        android:layout_below="@+id/home_item_img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/home_item_details_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:layout_below="@+id/home_item_title_tv"/>
+</RelativeLayout>

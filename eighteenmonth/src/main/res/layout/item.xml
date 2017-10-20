@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    style="@style/news_summary_card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="2dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_item_img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:scaleType="centerCrop"
+            tools:targetApi="lollipop"/>
+
+        <TextView
+            android:id="@+id/home_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/home_item_img"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_toRightOf="@+id/home_item_img"
+            android:lines="1"
+            android:textSize="@dimen/medium"/>
+
+        <TextView
+            android:id="@+id/home_item_details_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_item_title_tv"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_toRightOf="@+id/home_item_img"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="@dimen/small"
+            tools:text=""/>
+
+        <!--<CheckBox
+            android:id="@+id/home_item_cb"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('platform.keystore')
+            storePassword 'android'
+        }
+    }
+    defaultConfig {
+        applicationId "com.gionee.assistinstall"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "V1.01.01M"
+        signingConfig signingConfigs.config
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def file = output.outputFile
+                    def fileName = "AutoAssistInstall_${defaultConfig.versionName}.apk"
+                    output.outputFile = new File(file.parent,fileName)
+                }
+            }
+        }
+        debug{
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def file = output.outputFile
+                    def fileName = "AutoAssistInstall_${defaultConfig.versionName}.apk"
+                    output.outputFile = new File(file.parent,fileName)
+                }
+            }
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta1'
+    testCompile 'junit:junit:4.12'
+    compile(name: 'gnutils-debug', ext: 'aar')
+}

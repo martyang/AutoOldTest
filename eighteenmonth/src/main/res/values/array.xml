@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arr_title">
+        <item>联系人</item>
+        <item>短信</item>
+        <item>微信</item>
+        <item>QQ</item>
+        <item>图片(时光相册)</item>
+        <item>安装应用</item>
+        <item>卸载应用</item>
+        <item>浏览器</item>
+        <item>音乐(网易云音乐)</item>
+        <item>虎牙直播</item>
+        <item>视频(爱奇艺)</item>
+        <item>小说(酷我听书)</item>
+        <item>遍历应用</item>
+    </array>
+
+    <array name="arr_details">
+        <item>写入联系人5个联系人，对联系人进行操作20s点击+滑动列表</item>
+        <item>写入短信2条，对信息进行操作10s点击+滑动列表</item>
+        <item>写入10M数据（应用内部直接写入），对微信进行操作30s+滑动列表</item>
+        <item>写入20M数据（应用内部直接写入），对QQ进行操作30s+滑动列表</item>
+        <item>拍照11张照片，点击查看图片，滑动列表共30s</item>
+        <item>安装应用2个，并进入等待3分钟退出</item>
+        <item>卸载应用1个</item>
+        <item>访问24个链接,进行滑动</item>
+        <item>在线音乐播放13首歌，对应用进行列表滑动+点击播放操作 30s</item>
+        <item>在线播放，对应用进行列表滑动+点击播放操作 30s</item>
+        <item>载入2集视频，对应用进行列表滑动+点击播放操作 30s</item>
+        <item>载入一本小说，对应用进行列表滑动+点击播放操作 30s</item>
+        <item>记录典型首次应用响应时间:联系人、RAWapp、图库、相机、微信、浏览器+上面执行的所有应用的首次响应时间</item>
+    </array>
+
+    <array name="arr_pkg">
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.gionee.gallery</item>
+        <item>com.android.browser</item>
+        <item>com.netease.cloudmusic</item>
+        <item>com.duowan.kiwi</item>
+        <item>com.qiyi.video</item>
+        <item>cn.kuwo.tingshu</item>
+        <item>com.android.camera</item>
+        <item>com.example.cta_testload</item>
+    </array>
+
+    <array name="arr_app">
+        <item>时间</item>
+        <item>联系人</item>
+        <item>短信</item>
+        <item>微信</item>
+        <item>QQ</item>
+        <item>图片(时光相册)</item>
+        <item>浏览器</item>
+        <item>音乐(网易云音乐)</item>
+        <item>虎牙直播</item>
+        <item>视频(爱奇艺)</item>
+        <item>小说(酷我听书)</item>
+        <item>相机</item>
+        <item>RAWapp</item>
+    </array>
+    <array name="arr_gopkg">
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.gionee.gallery</item>
+        <item>com.android.browser</item>
+        <item>com.netease.cloudmusic</item>
+        <item>com.duowan.kiwi</item>
+        <item>com.qiyi.video</item>
+        <item>cn.kuwo.tingshu</item>
+        <item>com.android.camera</item>
+    </array>
+    <array name="arr_goapp">
+        <item>联系人</item>
+        <item>短信</item>
+        <item>微信</item>
+        <item>QQ</item>
+        <item>图片(时光相册)</item>
+        <item>浏览器</item>
+        <item>音乐(网易云音乐)</item>
+        <item>虎牙直播</item>
+        <item>视频(爱奇艺)</item>
+        <item>小说(酷我听书)</item>
+        <item>相机</item>
+    </array>
+    <array name="arr_link">
+        <item>http://news.qq.com/</item>
+        <item>http://www.jianshu.com/</item>
+        <item>http://www.open-open.com/</item>
+        <item>http://blog.csdn.net/</item>
+        <item>https://m.baidu.com/</item>
+        <item>http://www.qq.com/</item>
+        <item>http://www.jianshu.com/</item>
+        <item>http://www.open-open.com/</item>
+        <item>http://blog.csdn.net/</item>
+        <item>https://m.baidu.com/</item>
+        <item>http://www.qq.com/</item>
+        <item>http://www.jianshu.com/</item>
+        <item>http://www.open-open.com/</item>
+        <item>http://blog.csdn.net/</item>
+        <item>https://m.baidu.com/</item>
+        <item>http://www.qq.com/</item>
+        <item>http://www.jianshu.com/</item>
+        <item>http://www.open-open.com/</item>
+        <item>http://blog.csdn.net/</item>
+        <item>https://m.baidu.com/</item>
+        <item>http://www.qq.com/</item>
+        <item>http://www.jianshu.com/</item>
+        <item>http://www.open-open.com/</item>
+        <item>http://blog.csdn.net/</item>
+    </array>
+    <!--
+        <array name="arr_link">
+            <item>http://weibo.com/</item>
+            <item>http://www.jianshu.com/</item>
+            <item>http://www.open-open.com/</item>
+            <item>http://blog.csdn.net/</item>
+            <item>https://m.baidu.com/</item>
+            <item>https://toutiao.eastday.com/</item>
+            <item>https://juejin.im/</item>
+            <item>https://juejin.im/zhuanlan/all</item>
+            <item>https://www.taobao.com/</item>
+            <item>https://wx.qq.com/</item>
+            <item>http://www.qq.com/</item>
+            <item>http://news.qq.com/</item>
+            <item>https://v.qq.com/</item>
+            <item>http://finance.qq.com/</item>
+            <item>https://www.jd.hk/</item>
+            <item>https://www.jd.com/</item>
+            <item>http://sports.qq.com/</item>
+            <item>http://fashion.qq.com/</item>
+            <item>http://auto.qq.com/</item>
+            <item>http://sz.house.qq.com/</item>
+            <item>http://tech.qq.com/</item>
+            <item>http://games.qq.com/</item>
+            <item>http://edu.qq.com/</item>
+            <item>http://cul.qq.com/</item>
+        </array>-->
+</resources>

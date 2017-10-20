@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">"模拟用户18月老化测试"</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_help">帮助</string>
+    <string name="main_fillappdata">填充手机资料</string>
+    <string name="main_fillstorage">内部存储器IO操作</string>
+    <string name="main_sildetest">第三方应用滑动测试</string>
+    <string name="testAppText">本次测试应用:%1$s</string>
+    <string name="accessibility_service_description">各界面快速滑动辅助工具，监听并取消弹框</string>
+    <string name="acc_service_name">模拟用户18月老化测试</string>
+    <string name="start">开始测试</string>
+    <string name="testFinish">测试完成！</string>
+    <string name="Time">20</string>
+    <string name="minuteText">分钟</string>
+    <string name="timeText">测试时长(分钟):</string>
+    <string name="startAdd">开始添加</string>
+</resources>

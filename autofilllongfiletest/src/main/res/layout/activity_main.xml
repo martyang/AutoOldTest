@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.gionee.autofilllongfiletest.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:text="@string/fill_filesize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:text="@string/input_filesize"
+            android:id="@+id/main_et_filesize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <TextView
+            android:textSize="16sp"
+            android:text="@string/fill_imgsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:text="@string/input_imgsize"
+            android:id="@+id/main_et_imgsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:id="@+id/main_tv_teststate"
+        android:layout_below="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <Button
+            android:id="@+id/main_btn_start"
+            android:text="@string/start_test"
+            style="@style/btnstyle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:clickable="false"
+            android:text="@string/stop_test"
+            android:id="@+id/main_btn_stop"
+            style="@style/btnstyle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_tv_describe"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/splash_basepager"/>
+    <Button
+        android:id="@+id/onebyone_go"
+        style="@style/btn_check_styles"
+        android:layout_marginTop="240dp"
+        android:text="@string/onebyone_go"
+        />
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/go_kuwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/condition_6_s"
+        android:layout_marginTop="280dp"
+        />
+</RelativeLayout>
